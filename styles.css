@@ -52,12 +52,16 @@ nav {
 }
 
 .maincontent{
-    text-align: center;
+    grid-area: maincontent;
     margin-top: 1px;
     border: solid red 4px ;
     border-radius: 1%;
     background-color: black;
 }
+        
+
+
+
 
 .maincontent__image {
     width:100%;
@@ -208,11 +212,7 @@ iframe {
     
 }
 
-.maincontent{
-    grid-area: maincontent;
-    max-width: 1200px;
-    margin: 0 auto;
-}
+
 
 .footer{
     grid-area: footer;
