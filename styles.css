@@ -2,6 +2,11 @@
 
 * { margin: 0; padding: 0; }
 
+.allcontent{
+    max-height: 840px;
+    max-width: 1440px;
+}
+
 li, a {
     font-family: 'Rajdhani', sans-serif;
     color: black;
@@ -10,7 +15,6 @@ li, a {
 
 body {
     background-color: white;
-
 }
 
 nav {
@@ -57,16 +61,15 @@ nav {
     border: solid red 4px ;
     border-radius: 1%;
     background-color: black;
+    
 }
         
 
-
-
-
 .maincontent__image {
     width:100%;
-    height: 100%;
-    object-fit:cover;
+    height: 500px;
+    object-fit: scale-down;
+    
 }
 
 #galeria {
@@ -198,18 +201,16 @@ iframe {
 #maingrid{
     display: grid;
     grid-template-columns: 15vh 1fr 15vh;
-    grid-template-rows: 20vw 1fr 15vw;
+    grid-template-rows: 12vw 1fr 10vw;
     grid-template-areas:
-    "header header header"
-    "maincontent maincontent maincontent"
-    "footer footer footer";
+    ". header ."
+    ". maincontent ."
+    ". footer .";
 }
 
 .header{
     grid-area: header;
-    width: auto;
-    height: fit-content;
-    
+    align-self: center;
 }
 
 
