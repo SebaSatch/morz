@@ -106,10 +106,10 @@ h2{
     height: 2000px;
     display: grid;
     grid-template-areas:
-    "logo img1 img2"
-    "logo img3 img4"
-    "logo img5 img6"
-    "logo img7 img8";
+    "sidebar img1 img2"
+    "sidebar img3 img4"
+    "sidebar img5 img6"
+    "sidebar img7 img8";
     grid-template-columns: 15vh 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     ;
@@ -122,81 +122,130 @@ iframe {
 }
 
 
-.logo{
-    grid-area: logo;
-    background-image: url(media/logo/Logoacostado.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-
+.sidebar{
+    grid-area: sidebar;
+    background: rgb(2,0,36);
+    background: linear-gradient(to bottom, rgba(2,0,36,1) 0%, rgba(255,0,0,1) 100%);
 }
+
 
 .img1{
     grid-area: img1;
-    background-image: url(media/pics/animated/IMG-20170625-WA0009.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-
 }
+.img1__foto:hover {
+    transition-duration: 1.5s;
+    filter: blur(0px) grayscale(0%);
+}
+.img1__foto{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(5px) grayscale(90%);
+}
+
 
 .img2{
     grid-area: img2;
-    background-image: url(media/pics/animated/IMG-20171101-WA0018.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-}  
+}
+.img2__foto:hover {
+    transition-duration: 1.5s;
+    filter: blur(0px) grayscale(0%);
+}
+.img2__foto{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(5px) grayscale(90%);
+}
+
 
 .img3{
     grid-area: img3;
-    background-image: url(media/pics/animated/IMG-20171222-WA0000.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
 }
+.img3__foto:hover {
+    transition-duration: 1.5s;
+    filter: blur(0px) grayscale(0%);
+}
+.img3__foto{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(5px) grayscale(90%);
+}
+
 
 .img4{
     grid-area: img4;
-    background-image: url(media/pics/animated/IMG-20180129-WA0020.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
 }
+.img4__foto:hover {
+    transition-duration: 1.5s;
+    filter: blur(0px) grayscale(0%);
+}
+.img4__foto{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(5px) grayscale(90%);
+}
+
 
 .img5{
     grid-area: img5;
-    background-image: url(media/pics/animated/IMG-20180416-WA0051.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
+}
+.img5__foto:hover {
+    transition-duration: 1.5s;
+    filter: blur(0px) grayscale(0%);
+}
+.img5__foto{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(5px) grayscale(90%);
 }
 
 .img6{
     grid-area: img6;
-    background-image: url(media/pics/animated/IMG-20180626-WA0005.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
 }
-
+.img6__foto:hover {
+    transition-duration: 1.5s;
+    filter: blur(0px) grayscale(0%);
+}
+.img6__foto{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(5px) grayscale(90%);
+}
 
 .img7{
     grid-area: img7;
-    background-image: url(media/pics/animated/IMG-20180831-WA0203.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
 }
+.img7__foto:hover {
+    transition-duration: 1.5s;
+    filter: blur(0px) grayscale(0%);
+}
+.img7__foto{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(5px) grayscale(90%);
+}
+
 
 .img8{
     grid-area: img8;
-    background-image: url(media/pics/animated/IMG_20190203_222844_226.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
+}
+.img8__foto:hover {
+    transition-duration: 1.5s;
+    filter: blur(0px) grayscale(0%);
 }
 
+.img8__foto{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(5px) grayscale(90%);
+}
 
 #maingrid{
     display: grid;
