@@ -86,7 +86,27 @@ body {
     background-color: black; */
     
 }
-        
+    
+.miembros {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: initial;
+    margin-top: 20px;
+    background: linear-gradient(white 0%,black 100%);
+    
+    }
+
+.btn-primary {
+    --bs-btn-color: black;
+    --bs-btn-bg: red;
+    }
+
+.card-body{
+    align-items: initial;
+}
+
 
 .maincontent__image {
     width:100%;
@@ -156,7 +176,7 @@ iframe {
 .sidebar{
     grid-area: sidebar;
     background: rgb(2,0,36);
-    background: linear-gradient(to bottom, rgba(2,0,36,1) 0%, rgba(255,0,0,1) 100%);
+    background: linear-gradient(to bottom, white 0%, black 100%);
 }
 
 
@@ -278,6 +298,7 @@ iframe {
     filter: blur(5px) grayscale(90%);
 }
 #maingrid{
+ 
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
@@ -285,6 +306,7 @@ iframe {
     "header"
     "maincontent"
     "footer";
+    
 } 
 
 .header{
