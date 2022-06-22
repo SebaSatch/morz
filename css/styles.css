@@ -64,7 +64,10 @@ body {
 .menu__link {
     margin: 10px 50px 10px -5px;
 }
-
+.card-img-top{
+    width: 367px;
+    height: 356px;
+}
 
 .menu__link--active{
     color: red;
@@ -103,9 +106,9 @@ body {
     --bs-btn-bg: red;
     }
 
-.card-body{
+/* .card-body{
     align-items: initial;
-}
+} */
 
 
 .maincontent__image {
