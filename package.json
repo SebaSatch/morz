@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.18"
+  },
+  "name": "morz-metal---sigales-7-6-22-tp4",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss sass/index.scss css/translated.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SebaSatch/morz.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SebaSatch/morz/issues"
+  },
+  "homepage": "https://github.com/SebaSatch/morz#readme",
+  "description": ""
+}
