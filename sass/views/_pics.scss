@@ -1,0 +1,17 @@
+/*GALERIA*/
+
+#galeria {
+	text-align: center;
+	margin: 20px;
+	height: 500px;
+    .fotos  {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        align-items: center;
+        border: solid red 4px ;
+        border-radius: 1%;
+        background-color: $background-color;
+    }
+}
+

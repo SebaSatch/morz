@@ -1,0 +1,25 @@
+/*HISTORIA*/
+
+                .miembros {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                    align-items: initial;
+                    margin-top: 20px;
+                    background: linear-gradient(white 0%,black 100%);
+                        .card{
+                                .tarjetita{
+                                        .card-img-top{
+                                            width: 367px;
+                                            height: 356px;
+                                        }
+                                }
+                                .card-body{
+                                            align-items: initial;
+                                }
+                        }
+                }
+
+
+
