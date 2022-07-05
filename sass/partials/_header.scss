@@ -27,9 +27,12 @@
                             .menu__link {
                                 margin: 10px 50px 10px -5px;
                                 background-color: white;
+                                text-decoration: none;
+                                transition-duration: 2.5s;
                                     &:hover{
-                                        width: 100px;
+                                        font-size: 21px;
                                         background-color: $background-color;
+                                        text-decoration: underline;
                                         transition-duration: 2s;
                                     }
                             }
@@ -42,8 +45,12 @@
                             .menu__link__ultimo{
                                 text-align: center;
                                 margin: auto;
+                                text-decoration: none;
+                                transition-duration: 2.5s;
                                 &:hover{
+                                    font-size: 21px;
                                     background-color: $background-color;
+                                    text-decoration: underline;
                                     transition-duration: 2s;
                                 }
                             }  

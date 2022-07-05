@@ -102,10 +102,13 @@ p {
       font-size: larger; }
       .header .navbar nav .menu .menu__link {
         margin: 10px 50px 10px -5px;
-        background-color: white; }
+        background-color: white;
+        text-decoration: none;
+        transition-duration: 2.5s; }
         .header .navbar nav .menu .menu__link:hover {
-          width: 100px;
+          font-size: 21px;
           background-color: grey;
+          text-decoration: underline;
           transition-duration: 2s; }
       .header .navbar nav .menu .menu__link--active {
         color: red; }
@@ -113,9 +116,13 @@ p {
         list-style-image: url(../media/logo/item_chiquito.jpg); }
       .header .navbar nav .menu .menu__link__ultimo {
         text-align: center;
-        margin: auto; }
+        margin: auto;
+        text-decoration: none;
+        transition-duration: 2.5s; }
         .header .navbar nav .menu .menu__link__ultimo:hover {
+          font-size: 21px;
           background-color: grey;
+          text-decoration: underline;
           transition-duration: 2s; }
 
 /* FOOTER */
