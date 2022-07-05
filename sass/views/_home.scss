@@ -1,17 +1,2 @@
 /*INICIO*/
 
-.container{
-    max-width: 1150px;
-        #maingrid{
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr;
-            grid-template-areas:
-            "header"
-            "maincontent"
-            "footer";
-                .maincontent{
-                    grid-area: maincontent;
-                }
-        }
-}

@@ -4,13 +4,15 @@
     grid-area: header;
         .navbar {
             @include flex(wrap, space-between, center);
-            // display: flex;
-            // flex-wrap: wrap;
-            // justify-content: space-between;
-            // align-items: center;
+            gap: 60px;
             padding: 0;
                 .navbar__logochico{
+                    transition-duration: 2s;
                     width: 220px;
+                        &:hover{
+                            width: 240px;
+                            transition-duration: 2s;
+                        }    
                 }
                 nav {
                     .menu {
@@ -24,10 +26,15 @@
                         font-size: larger;
                             .menu__link {
                                 margin: 10px 50px 10px -5px;
+                                background-color: white;
+                                    &:hover{
+                                        width: 100px;
+                                        background-color: $background-color;
+                                        transition-duration: 2s;
+                                    }
                             }
                             .menu__link--active{
                                 color: $secondary;
-                                background-color: $background-color;
                             }
                             .menu__item--active {
                                 list-style-image: url(../media/logo/item_chiquito.jpg);    
@@ -35,6 +42,10 @@
                             .menu__link__ultimo{
                                 text-align: center;
                                 margin: auto;
+                                &:hover{
+                                    background-color: $background-color;
+                                    transition-duration: 2s;
+                                }
                             }  
                     }
                 }

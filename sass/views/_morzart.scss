@@ -4,16 +4,13 @@
     height: 2000px;
     display: grid;
     grid-template-areas:
-    "sidebar img1 img2"
-    "sidebar img3 img4"
-    "sidebar img5 img6"
-    "sidebar img7 img8";
-    grid-template-columns: 15vh 1fr 1fr;
+    "img1 img2"
+    "img3 img4"
+    "img5 img6"
+    "img7 img8";
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-            .sidebar{
-            grid-area: sidebar;
-            background: rgb(2,0,36);
-            background: linear-gradient(to bottom, white 0%, black 100%);
+        
         }
         .img1{
             grid-area: img1;
@@ -116,4 +113,3 @@
             object-fit: cover;
             filter:grayscale(90%);
         }
-}

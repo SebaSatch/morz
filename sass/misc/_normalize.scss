@@ -1,14 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
-:root {
-    --bs-body-line-height: 1.2;
-}
+
+
 * {
     margin: 0; 
     padding: 0; 
 }
+
 .container{
-    max-width: 1150px
+    @include flex(wrap, space-around, center);
+        #maingrid{
+                display: grid;
+                grid-template-columns: 1024px;
+                grid-template-rows: 1fr;
+                grid-template-areas:
+                "header"
+                "maincontent"
+                "footer";
+            .maincontent{
+                grid-area: maincontent;
+                @include flex(wrap, space-around, center);
+            }
+        }
 }
+
+
+
+
+
+
 
 ul{
     margin-bottom: 0;
@@ -27,6 +46,8 @@ li, a {
 
 body {
     background-color: white;
+    margin-left: 150px;
+    margin-right: 150px;
 }
 
 h2{
@@ -40,4 +61,27 @@ h2{
     padding-right: 20px;
     text-align: center;
     
+}
+
+h3{
+    font-family: 'Rajdhani', sans-serif;
+    border: solid black 2px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    line-height: lh-sm;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    
+}
+p{
+    font-family: 'Rajdhani', sans-serif;
+    border: solid black 2px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    line-height: lh-sm;
+    padding-left: 20px;
+    padding-right: 20px;
 }
