@@ -1,16 +1,54 @@
-/* HEADER */
+@media screen and (max-width: 320px){
+    body {
+        background-color: white;
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+
+    .mainimage { width: 270px;
+        height: 300px;
+        ;}
+        
+
+.container{
+    max-width: 1150px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 2fr 0.1fr;
+    gap: 0rem;
+    grid-template-areas:
+        "header"
+        "maincontent"
+        "footer";
+        .header{
+            grid-area: header;}
+        .maincontent{
+                    grid-area: maincontent;
+                    display: flex;
+                    justify-content: center;
+                }
+        .footer{
+            grid-area: footer;
+        }
+        }
+
+
+
+
+
+
 
 .header{
-    @include flex(wrap, space-between, center);
+    @include flex(wrap, center, center);
         .navbar {
-            @include flex(wrap, space-between, center);
-            gap: 60px;
+            @include flex(wrap, center, center);
+            gap: 0px;
             padding: 0;
                 .navbar__logochico{
                     transition-duration: 2s;
-                    width: 220px;
+                    width: 100px;
                         &:hover{
-                            width: 240px;
+                            width: 100px;
                             transition-duration: 2s;
                         }    
                 }
@@ -25,12 +63,13 @@
                         font: bolder;
                         font-size: larger;
                             .menu__link {
-                                margin: 10px 50px 10px -5px;
+                                margin: 0px 20px;
                                 background-color: white;
                                 text-decoration: none;
                                 transition-duration: 2.5s;
+                                font-size: 15px;
                                     &:hover{
-                                        font-size: 21px;
+                                        font-size: 15px;
                                         background-color: $background-color;
                                         text-decoration: underline;
                                         transition-duration: 2s;
@@ -40,15 +79,16 @@
                                 color: $secondary;
                             }
                             .menu__item--active {
-                                list-style-image: url(../media/logo/item_chiquito.jpg);    
+                                list-style-image: none;    
                             }
                             .menu__link__ultimo{
                                 text-align: center;
                                 margin: auto;
                                 text-decoration: none;
                                 transition-duration: 2.5s;
+                                font-size: 15px;
                                 &:hover{
-                                    font-size: 21px;
+                                    font-size: 15px;
                                     background-color: $background-color;
                                     text-decoration: underline;
                                     transition-duration: 2s;
@@ -57,4 +97,43 @@
                     }
                 }
         }
+}
+
+h2{
+    font-size: 14px;
+}
+
+
+footer{
+    .footer{
+        grid-area: footer;
+            .footer__box{
+                @include flex(wrap, space-between, center);
+                align-self: center;
+                margin-top: 5px;
+            }
+    }
+}
+
+#morzart{
+    height: 2000px;
+    display: grid;
+    grid-template-areas:
+    "img1"
+     "img2"
+    "img3" 
+    "img4"
+    "img5" 
+    "img6"
+    "img7" 
+    "img8";
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+        
+        }
+
+iframe{
+    width: 270px;
+    height:300px;
+} 
 }
