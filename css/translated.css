@@ -381,4 +381,7 @@ footer .footer {
     grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr; }
   iframe {
     width: 270px;
-    height: 300px; } }
+    height: 300px; }
+  .fotos img {
+    width: 270px;
+    height: 250px; } }
