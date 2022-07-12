@@ -286,7 +286,7 @@ footer .footer {
     margin: 10px; }
 
 /*CONTACTO*/
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 380px) {
   body {
     background-color: white;
     margin-left: 2px;
