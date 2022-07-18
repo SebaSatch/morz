@@ -1,4 +1,9 @@
 /*INICIO*/
-.mainimage { width: 600px;
-height: 800px;
-;}
+
+.maincontent{
+    @include flex(wrap, center, center);
+        .mainimage { 
+            width: 600px;
+            height: 800px;
+    }
+}

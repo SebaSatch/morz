@@ -1,12 +1,12 @@
 {
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.1.1",
     "node-sass": "^7.0.1",
     "nodemon": "^2.0.18"
   },
   "name": "morz-metal---sigales-7-6-22-tp4",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-css": "node-sass --include-path scss sass/index.scss css/translated.css",

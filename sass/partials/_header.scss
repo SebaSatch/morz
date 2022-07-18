@@ -4,7 +4,7 @@
     @include flex(wrap, space-between, center);
         .navbar {
             @include flex(wrap, space-between, center);
-            gap: 60px;
+            gap: 150px;
             padding: 0;
                 .navbar__logochico{
                     transition-duration: 2s;
