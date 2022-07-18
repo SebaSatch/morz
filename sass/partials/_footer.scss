@@ -5,7 +5,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height:8vh;
+  height:10vh;
 }
 
 .social-wrapper i {
@@ -31,6 +31,10 @@
   text-shadow: 0px 16px 10px rgba(233, 89, 80, 0.3);
 }
 
+#youtube:hover {
+  color: #8a3ab9;
+  text-shadow: 0px 16px 10px rgba(233, 89, 80, 0.3);
+}
 
 #github:hover {
   color: #c9510c;
