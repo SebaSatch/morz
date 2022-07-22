@@ -1,41 +1,17 @@
-@media screen and (max-width: 380px){
+@media (min-width: 120px) and (max-width: 380px) {
     body {
         background-color: white;
         margin-left: 2px;
         margin-right: 2px;
     }
 
-    .mainimage { width: 270px;
-        height: 300px;
-        ;}
+    .mainimage { width: 300px;
+        height: 320px;
+    }
         
-
-.container{
-    max-width: 1150px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.4fr 2fr 0.1fr;
-    gap: 0rem;
-    grid-template-areas:
-        "header"
-        "maincontent"
-        "footer";
-        .header{
-            grid-area: header;}
-        .maincontent{
-                    grid-area: maincontent;
-                    display: flex;
-                    justify-content: center;
-                }
-        .footer{
-            grid-area: footer;
-        }
-        }
-
-
-
-
-
+    i, .fa-2x{
+        font-size: 1.2em;
+    }
 
 
 .header{
@@ -46,9 +22,9 @@
             padding: 0;
                 .navbar__logochico{
                     transition-duration: 2s;
-                    width: 100px;
+                    width: 175px;
                         &:hover{
-                            width: 100px;
+                            width: 175px;
                             transition-duration: 2s;
                         }    
                 }
@@ -63,7 +39,7 @@
                         font: bolder;
                         font-size: larger;
                             .menu__link {
-                                margin: 0px 20px;
+                                margin: 0px 10px;
                                 background-color: white;
                                 text-decoration: none;
                                 transition-duration: 2.5s;
@@ -83,7 +59,7 @@
                             }
                             .menu__link__ultimo{
                                 text-align: center;
-                                margin: auto;
+                                margin: 0 10px;
                                 text-decoration: none;
                                 transition-duration: 2.5s;
                                 font-size: 15px;
@@ -103,24 +79,12 @@ h2{
     font-size: 14px;
 }
 
-
-footer{
-    .footer{
-        grid-area: footer;
-            .footer__box{
-                @include flex(wrap, space-between, center);
-                align-self: center;
-                margin-top: 5px;
-            }
-    }
-}
-
 #morzart{
     height: 2000px;
     display: grid;
     grid-template-areas:
     "img1"
-     "img2"
+    "img2"
     "img3" 
     "img4"
     "img5" 
@@ -141,6 +105,464 @@ iframe{
     width: 270px;
     height:250px; 
 }
+#galeria {
+	text-align: center;
+    .fotos  {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 1%;
+        
+            img{
+                width: 300px;
+                height: 220px;
+                transition-duration: 2s;
+                &:hover{
+                    width: 300px;
+                    height: 220px;
+                    transition-duration: 2s;
+                }
+            }
+    }
+}
 
 
+
+
+}
+
+@media (min-width: 381px) and (max-width: 500px){
+    body {
+        background-color: white;
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+
+    .mainimage { width: 325px;
+        height: 380px;
+    }
+        
+    i, .fa-2x{
+        font-size: 1.4em;
+    }
+
+    .header{
+        @include flex(wrap, center, center);
+            .navbar {
+                @include flex(wrap, center, center);
+                gap: 0px;
+                padding: 0;
+                    .navbar__logochico{
+                        transition-duration: 2s;
+                        width: 175px;
+                            &:hover{
+                                width: 175px;
+                                transition-duration: 2s;
+                            }    
+                    }
+                    nav {
+                        .menu {
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            align-items: baseline;
+                            flex-wrap: wrap;
+                            list-style: none;
+                            font: bolder;
+                            font-size: larger;
+                                .menu__link {
+                                    margin: 0px 10px;
+                                    background-color: white;
+                                    text-decoration: none;
+                                    transition-duration: 2.5s;
+                                    font-size: 15px;
+                                        &:hover{
+                                            font-size: 15px;
+                                            background-color: $background-color;
+                                            text-decoration: underline;
+                                            transition-duration: 2s;
+                                        }
+                                }
+                                .menu__link--active{
+                                    color: $secondary;
+                                }
+                                .menu__item--active {
+                                    list-style-image: none;    
+                                }
+                                .menu__link__ultimo{
+                                    text-align: center;
+                                    margin: 0 10px;
+                                    text-decoration: none;
+                                    transition-duration: 2.5s;
+                                    font-size: 15px;
+                                    &:hover{
+                                        font-size: 15px;
+                                        background-color: $background-color;
+                                        text-decoration: underline;
+                                        transition-duration: 2s;
+                                    }
+                                }  
+                        }
+                    }
+            }
+    }
+    
+    h2{
+        font-size: 14px;
+    }
+    
+    #morzart{
+        height: 2000px;
+        display: grid;
+        grid-template-areas:
+        "img1"
+        "img2"
+        "img3" 
+        "img4"
+        "img5" 
+        "img6"
+        "img7" 
+        "img8";
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+            
+            }
+    
+    iframe{
+        width: 270px;
+        height:300px;
+    } 
+    
+    .fotos img{
+        width: 270px;
+        height:250px; 
+    }
+
+    #galeria {
+        text-align: center;
+        .fotos  {
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: space-around;
+            align-items: center;
+            border-radius: 1%;
+            
+                img{
+                    width: 350px;
+                    height: 260px;
+                    transition-duration: 2s;
+                    &:hover{
+                        width: 350px;
+                        height: 260px;
+                        transition-duration: 2s;
+                    }
+                }
+        }
+    }
+    
+    
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 501px) and (max-width: 768px){
+    body {
+        background-color: white;
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+
+    .mainimage { width: 450px;
+        height: 620px;
+    }
+        
+    i, .fa-2x{
+        font-size: 1.7em;
+    }
+
+    .header{
+        @include flex(wrap, center, center);
+            .navbar {
+                @include flex(wrap, center, center);
+                gap: 0px;
+                padding: 0;
+                    .navbar__logochico{
+                        transition-duration: 2s;
+                        width: 210px;
+                            &:hover{
+                                width: 210px;
+                                transition-duration: 2s;
+                            }    
+                    }
+                    nav {
+                        .menu {
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            align-items: baseline;
+                            flex-wrap: wrap;
+                            list-style: none;
+                            font: bolder;
+                            font-size: larger;
+                                .menu__link {
+                                    margin: 0px 10px;
+                                    background-color: white;
+                                    text-decoration: none;
+                                    transition-duration: 2.5s;
+                                    font-size: 18px;
+                                        &:hover{
+                                            font-size: 18px;
+                                            background-color: $background-color;
+                                            text-decoration: underline;
+                                            transition-duration: 2s;
+                                        }
+                                }
+                                .menu__link--active{
+                                    color: $secondary;
+                                }
+                                .menu__item--active {
+                                    list-style-image: none;    
+                                }
+                                .menu__link__ultimo{
+                                    text-align: center;
+                                    margin: 0 10px;
+                                    text-decoration: none;
+                                    transition-duration: 2.5s;
+                                    font-size: 18px;
+                                    &:hover{
+                                        font-size: 18px;
+                                        background-color: $background-color;
+                                        text-decoration: underline;
+                                        transition-duration: 2s;
+                                    }
+                                }  
+                        }
+                    }
+            }
+    }
+    
+    h2{
+        font-size: 14px;
+    }
+    
+    #morzart{
+        height: 2000px;
+        display: grid;
+        grid-template-areas:
+        "img1"
+        "img2"
+        "img3" 
+        "img4"
+        "img5" 
+        "img6"
+        "img7" 
+        "img8";
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+            
+            }
+    
+    iframe{
+        width: 270px;
+        height:300px;
+    } 
+    
+    .fotos img{
+        width: 270px;
+        height:250px; 
+    }
+
+    #galeria {
+        text-align: center;
+        .fotos  {
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: space-around;
+            align-items: center;
+            border-radius: 1%;
+            
+                img{
+                    width: 500px;
+                    height: 380px;
+                    transition-duration: 2s;
+                    &:hover{
+                        width: 500px;
+                        height: 380px;
+                        transition-duration: 2s;
+                    }
+                }
+        }
+    }
+    
+    
+
+
+
+}
+
+
+
+
+
+@media (min-width: 769px) and (max-width: 1024px){
+    body {
+        background-color: white;
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+
+    .mainimage { width: 550px;
+        height: 780px;
+    }
+        
+    i, .fa-2x{
+        font-size: 2em;
+    }
+
+    .header{
+        @include flex(wrap, center, center);
+            .navbar {
+                @include flex(wrap, center, center);
+                gap: 0px;
+                padding: 0;
+                    .navbar__logochico{
+                        transition-duration: 2s;
+                        width: 210px;
+                            &:hover{
+                                width: 210px;
+                                transition-duration: 2s;
+                            }    
+                    }
+                    nav {
+                        .menu {
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            align-items: baseline;
+                            flex-wrap: wrap;
+                            list-style: none;
+                            font: bolder;
+                            font-size: larger;
+                                .menu__link {
+                                    margin: 0px 10px;
+                                    background-color: white;
+                                    text-decoration: none;
+                                    transition-duration: 2.5s;
+                                    font-size: 20px;
+                                        &:hover{
+                                            font-size: 20px;
+                                            background-color: $background-color;
+                                            text-decoration: underline;
+                                            transition-duration: 2s;
+                                        }
+                                }
+                                .menu__link--active{
+                                    color: $secondary;
+                                }
+                                .menu__item--active {
+                                    list-style-image: none;    
+                                }
+                                .menu__link__ultimo{
+                                    text-align: center;
+                                    margin: 0 10px;
+                                    text-decoration: none;
+                                    transition-duration: 2.5s;
+                                    font-size: 20px;
+                                    &:hover{
+                                        font-size: 20px;
+                                        background-color: $background-color;
+                                        text-decoration: underline;
+                                        transition-duration: 2s;
+                                    }
+                                }  
+                        }
+                    }
+            }
+    }
+    
+    h2{
+        font-size: 14px;
+    }
+    
+    #morzart{
+        height: 2000px;
+        display: grid;
+        grid-template-areas:
+        "img1"
+        "img2"
+        "img3" 
+        "img4"
+        "img5" 
+        "img6"
+        "img7" 
+        "img8";
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+            
+            }
+    
+    iframe{
+        width: 270px;
+        height:300px;
+    } 
+    
+    .fotos img{
+        width: 270px;
+        height:250px; 
+    }
+
+
+    #galeria {
+        text-align: center;
+        .fotos  {
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: space-around;
+            align-items: center;
+            border-radius: 1%;
+            
+                img{
+                    width: 600px;
+                    height: 450px;
+                    transition-duration: 2s;
+                    &:hover{
+                        width: 600px;
+                        height: 450px;
+                        transition-duration: 2s;
+                    }
+                }
+        }
+    }
+    
+    
 }

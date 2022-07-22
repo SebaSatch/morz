@@ -154,16 +154,12 @@ p {
   text-shadow: 0px 16px 10px rgba(233, 89, 80, 0.3); }
 
 #youtube:hover {
-  color: #8a3ab9;
+  color: #ff1b1b;
   text-shadow: 0px 16px 10px rgba(233, 89, 80, 0.3); }
 
 #github:hover {
   color: #c9510c;
   text-shadow: 0px 16px 10px rgba(189, 44, 0, 0.3); }
-
-#email:hover {
-  color: #dd4b39;
-  text-shadow: 0px 16px 10px rgba(221, 75, 57, 0.3); }
 
 /* VIEWS */
 /*INICIO*/
@@ -172,9 +168,10 @@ p {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center; }
-  .maincontent .mainimage {
-    width: 600px;
-    height: 800px; }
+
+.mainimage {
+  width: 600px;
+  height: 800px; }
 
 /*MORZART*/
 #morzart {
@@ -317,29 +314,16 @@ p {
     margin: 10px; }
 
 /*CONTACTO*/
-@media screen and (max-width: 380px) {
+@media (min-width: 120px) and (max-width: 380px) {
   body {
     background-color: white;
     margin-left: 2px;
     margin-right: 2px; }
   .mainimage {
-    width: 270px;
-    height: 300px; }
-  .container {
-    max-width: 1150px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.4fr 2fr 0.1fr;
-    gap: 0rem;
-    grid-template-areas: "header" "maincontent" "footer"; }
-    .container .header {
-      grid-area: header; }
-    .container .maincontent {
-      grid-area: maincontent;
-      display: flex;
-      justify-content: center; }
-    .container .footer {
-      grid-area: footer; }
+    width: 300px;
+    height: 320px; }
+  i, .fa-2x {
+    font-size: 1.2em; }
   .header {
     display: flex;
     flex-wrap: wrap;
@@ -354,9 +338,9 @@ p {
       padding: 0; }
       .header .navbar .navbar__logochico {
         transition-duration: 2s;
-        width: 100px; }
+        width: 175px; }
         .header .navbar .navbar__logochico:hover {
-          width: 100px;
+          width: 175px;
           transition-duration: 2s; }
       .header .navbar nav .menu {
         display: flex;
@@ -368,7 +352,7 @@ p {
         font: bolder;
         font-size: larger; }
         .header .navbar nav .menu .menu__link {
-          margin: 0px 20px;
+          margin: 0px 10px;
           background-color: white;
           text-decoration: none;
           transition-duration: 2.5s;
@@ -384,7 +368,7 @@ p {
           list-style-image: none; }
         .header .navbar nav .menu .menu__link__ultimo {
           text-align: center;
-          margin: auto;
+          margin: 0 10px;
           text-decoration: none;
           transition-duration: 2.5s;
           font-size: 15px; }
@@ -395,15 +379,6 @@ p {
             transition-duration: 2s; }
   h2 {
     font-size: 14px; }
-  footer .footer {
-    grid-area: footer; }
-    footer .footer .footer__box {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: center;
-      align-self: center;
-      margin-top: 5px; }
   #morzart {
     height: 2000px;
     display: grid;
@@ -415,4 +390,302 @@ p {
     height: 300px; }
   .fotos img {
     width: 270px;
-    height: 250px; } }
+    height: 250px; }
+  #galeria {
+    text-align: center; }
+    #galeria .fotos {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: space-around;
+      align-items: center;
+      border-radius: 1%; }
+      #galeria .fotos img {
+        width: 300px;
+        height: 220px;
+        transition-duration: 2s; }
+        #galeria .fotos img:hover {
+          width: 300px;
+          height: 220px;
+          transition-duration: 2s; } }
+
+@media (min-width: 381px) and (max-width: 500px) {
+  body {
+    background-color: white;
+    margin-left: 2px;
+    margin-right: 2px; }
+  .mainimage {
+    width: 325px;
+    height: 380px; }
+  i, .fa-2x {
+    font-size: 1.4em; }
+  .header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; }
+    .header .navbar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 0px;
+      padding: 0; }
+      .header .navbar .navbar__logochico {
+        transition-duration: 2s;
+        width: 175px; }
+        .header .navbar .navbar__logochico:hover {
+          width: 175px;
+          transition-duration: 2s; }
+      .header .navbar nav .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: baseline;
+        flex-wrap: wrap;
+        list-style: none;
+        font: bolder;
+        font-size: larger; }
+        .header .navbar nav .menu .menu__link {
+          margin: 0px 10px;
+          background-color: white;
+          text-decoration: none;
+          transition-duration: 2.5s;
+          font-size: 15px; }
+          .header .navbar nav .menu .menu__link:hover {
+            font-size: 15px;
+            background-color: grey;
+            text-decoration: underline;
+            transition-duration: 2s; }
+        .header .navbar nav .menu .menu__link--active {
+          color: red; }
+        .header .navbar nav .menu .menu__item--active {
+          list-style-image: none; }
+        .header .navbar nav .menu .menu__link__ultimo {
+          text-align: center;
+          margin: 0 10px;
+          text-decoration: none;
+          transition-duration: 2.5s;
+          font-size: 15px; }
+          .header .navbar nav .menu .menu__link__ultimo:hover {
+            font-size: 15px;
+            background-color: grey;
+            text-decoration: underline;
+            transition-duration: 2s; }
+  h2 {
+    font-size: 14px; }
+  #morzart {
+    height: 2000px;
+    display: grid;
+    grid-template-areas: "img1" "img2" "img3"  "img4" "img5"  "img6" "img7"  "img8";
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr; }
+  iframe {
+    width: 270px;
+    height: 300px; }
+  .fotos img {
+    width: 270px;
+    height: 250px; }
+  #galeria {
+    text-align: center; }
+    #galeria .fotos {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: space-around;
+      align-items: center;
+      border-radius: 1%; }
+      #galeria .fotos img {
+        width: 350px;
+        height: 260px;
+        transition-duration: 2s; }
+        #galeria .fotos img:hover {
+          width: 350px;
+          height: 260px;
+          transition-duration: 2s; } }
+
+@media (min-width: 501px) and (max-width: 768px) {
+  body {
+    background-color: white;
+    margin-left: 2px;
+    margin-right: 2px; }
+  .mainimage {
+    width: 450px;
+    height: 620px; }
+  i, .fa-2x {
+    font-size: 1.7em; }
+  .header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; }
+    .header .navbar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 0px;
+      padding: 0; }
+      .header .navbar .navbar__logochico {
+        transition-duration: 2s;
+        width: 210px; }
+        .header .navbar .navbar__logochico:hover {
+          width: 210px;
+          transition-duration: 2s; }
+      .header .navbar nav .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: baseline;
+        flex-wrap: wrap;
+        list-style: none;
+        font: bolder;
+        font-size: larger; }
+        .header .navbar nav .menu .menu__link {
+          margin: 0px 10px;
+          background-color: white;
+          text-decoration: none;
+          transition-duration: 2.5s;
+          font-size: 18px; }
+          .header .navbar nav .menu .menu__link:hover {
+            font-size: 18px;
+            background-color: grey;
+            text-decoration: underline;
+            transition-duration: 2s; }
+        .header .navbar nav .menu .menu__link--active {
+          color: red; }
+        .header .navbar nav .menu .menu__item--active {
+          list-style-image: none; }
+        .header .navbar nav .menu .menu__link__ultimo {
+          text-align: center;
+          margin: 0 10px;
+          text-decoration: none;
+          transition-duration: 2.5s;
+          font-size: 18px; }
+          .header .navbar nav .menu .menu__link__ultimo:hover {
+            font-size: 18px;
+            background-color: grey;
+            text-decoration: underline;
+            transition-duration: 2s; }
+  h2 {
+    font-size: 14px; }
+  #morzart {
+    height: 2000px;
+    display: grid;
+    grid-template-areas: "img1" "img2" "img3"  "img4" "img5"  "img6" "img7"  "img8";
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr; }
+  iframe {
+    width: 270px;
+    height: 300px; }
+  .fotos img {
+    width: 270px;
+    height: 250px; }
+  #galeria {
+    text-align: center; }
+    #galeria .fotos {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: space-around;
+      align-items: center;
+      border-radius: 1%; }
+      #galeria .fotos img {
+        width: 500px;
+        height: 380px;
+        transition-duration: 2s; }
+        #galeria .fotos img:hover {
+          width: 500px;
+          height: 380px;
+          transition-duration: 2s; } }
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  body {
+    background-color: white;
+    margin-left: 2px;
+    margin-right: 2px; }
+  .mainimage {
+    width: 550px;
+    height: 780px; }
+  i, .fa-2x {
+    font-size: 2em; }
+  .header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; }
+    .header .navbar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 0px;
+      padding: 0; }
+      .header .navbar .navbar__logochico {
+        transition-duration: 2s;
+        width: 210px; }
+        .header .navbar .navbar__logochico:hover {
+          width: 210px;
+          transition-duration: 2s; }
+      .header .navbar nav .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: baseline;
+        flex-wrap: wrap;
+        list-style: none;
+        font: bolder;
+        font-size: larger; }
+        .header .navbar nav .menu .menu__link {
+          margin: 0px 10px;
+          background-color: white;
+          text-decoration: none;
+          transition-duration: 2.5s;
+          font-size: 20px; }
+          .header .navbar nav .menu .menu__link:hover {
+            font-size: 20px;
+            background-color: grey;
+            text-decoration: underline;
+            transition-duration: 2s; }
+        .header .navbar nav .menu .menu__link--active {
+          color: red; }
+        .header .navbar nav .menu .menu__item--active {
+          list-style-image: none; }
+        .header .navbar nav .menu .menu__link__ultimo {
+          text-align: center;
+          margin: 0 10px;
+          text-decoration: none;
+          transition-duration: 2.5s;
+          font-size: 20px; }
+          .header .navbar nav .menu .menu__link__ultimo:hover {
+            font-size: 20px;
+            background-color: grey;
+            text-decoration: underline;
+            transition-duration: 2s; }
+  h2 {
+    font-size: 14px; }
+  #morzart {
+    height: 2000px;
+    display: grid;
+    grid-template-areas: "img1" "img2" "img3"  "img4" "img5"  "img6" "img7"  "img8";
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr; }
+  iframe {
+    width: 270px;
+    height: 300px; }
+  .fotos img {
+    width: 270px;
+    height: 250px; }
+  #galeria {
+    text-align: center; }
+    #galeria .fotos {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: space-around;
+      align-items: center;
+      border-radius: 1%; }
+      #galeria .fotos img {
+        width: 600px;
+        height: 450px;
+        transition-duration: 2s; }
+        #galeria .fotos img:hover {
+          width: 600px;
+          height: 450px;
+          transition-duration: 2s; } }
