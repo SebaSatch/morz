@@ -340,7 +340,7 @@ p {
         transition-duration: 2s;
         width: 175px; }
         .header .navbar .navbar__logochico:hover {
-          width: 175px;
+          width: 230px;
           transition-duration: 2s; }
       .header .navbar nav .menu {
         display: flex;
@@ -433,7 +433,7 @@ p {
         transition-duration: 2s;
         width: 175px; }
         .header .navbar .navbar__logochico:hover {
-          width: 175px;
+          width: 250px;
           transition-duration: 2s; }
       .header .navbar nav .menu {
         display: flex;
@@ -526,7 +526,7 @@ p {
         transition-duration: 2s;
         width: 210px; }
         .header .navbar .navbar__logochico:hover {
-          width: 210px;
+          width: 310px;
           transition-duration: 2s; }
       .header .navbar nav .menu {
         display: flex;
@@ -619,7 +619,7 @@ p {
         transition-duration: 2s;
         width: 210px; }
         .header .navbar .navbar__logochico:hover {
-          width: 210px;
+          width: 480px;
           transition-duration: 2s; }
       .header .navbar nav .menu {
         display: flex;
