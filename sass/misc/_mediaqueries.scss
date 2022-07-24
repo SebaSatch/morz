@@ -126,6 +126,44 @@ iframe{
     }
 }
 
+.maintext {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+        .backmorz{
+            margin-top: 89px;
+            position: absolute;
+            z-index: 3;
+            width: 240px;
+            height: 350px;
+            filter: opacity(0%);
+            transition-duration: 1.5s;
+            }
+        .backmorz:hover {
+            transition-duration: 1.5s;
+            filter: opacity(30%);
+            }
+
+
+    .papiro{
+        position: relative;
+        z-index: 1;
+        width: 320px;
+        height: 715px;
+    }
+    p{
+        margin-top: 50px;
+        font-size: small;
+        z-index: 2;
+        position: absolute;
+        font-family: 'MedievalSharp', cursive;
+        font-weight: bold;
+        border: none;
+        width: 240px;
+        height: 400px ;
+    }
+}
 
 
 
@@ -260,6 +298,42 @@ iframe{
     }
     
     
+    .maintext {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+            .backmorz{
+                position: absolute;
+                z-index: 3;
+                width: 400px;
+                height: 500px;
+                filter: opacity(0%);
+                transition-duration: 1.5s;
+                }
+            .backmorz:hover {
+                transition-duration: 1.5s;
+                filter: opacity(30%);
+                }
+
+
+        .papiro{
+            position: relative;
+            z-index: 1;
+            width: 400px;
+            height: 550px;
+        }
+        p{
+            font-size: small;
+            z-index: 2;
+            position: absolute;
+            font-family: 'MedievalSharp', cursive;
+            font-weight: bold;
+            border: none;
+            width: 310px;
+        }
+}
+
 
 
 }
@@ -376,15 +450,15 @@ iframe{
     #morzart{
         display: grid;
         grid-template-areas:
-        "img1"
-        "img2"
-        "img3" 
-        "img4"
-        "img5" 
-        "img6"
-        "img7" 
-        "img8";
-        grid-template-columns: 1fr;
+        ". img1 ."
+        ". img2 ." 
+        ". img3 ." 
+        ". img4 ."
+        ". img5 ." 
+        ". img6 ."
+        ". img7 ." 
+        ". img8 .";
+        grid-template-columns: 0.2fr 1fr 0.2fr;
         grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
             
             }
@@ -456,7 +530,7 @@ iframe{
                         transition-duration: 2s;
                         width: 210px;
                             &:hover{
-                                width: 480px;
+                                width: 225px;
                                 transition-duration: 2s;
                             }    
                     }
@@ -511,26 +585,120 @@ iframe{
         font-size: 14px;
     }
     
-    #morzart{
-        display: grid;
-        grid-template-areas:
-        "img1"
-        "img2"
-        "img3" 
-        "img4"
-        "img5" 
-        "img6"
-        "img7" 
-        "img8";
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
-            
-            }
+
     
-    iframe{
+    .fotos img{
         width: 270px;
-        height:300px;
-    } 
+        height:250px; 
+    }
+
+
+    #galeria {
+        text-align: center;
+        .fotos  {
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: space-around;
+            align-items: center;
+            border-radius: 1%;
+            
+                img{
+                    width: 600px;
+                    height: 450px;
+                    transition-duration: 2s;
+                    &:hover{
+                        width: 600px;
+                        height: 450px;
+                        transition-duration: 2s;
+                    }
+                }
+        }
+    }
+    
+    
+}
+
+@media (min-width: 1025px) and (max-width: 1440px){
+    body {
+        background-color: white;
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+
+    .mainimage { width: 550px;
+        height: 780px;
+    }
+        
+    i, .fa-2x{
+        font-size: 2em;
+    }
+
+    .header{
+        @include flex(wrap, center, center);
+            .navbar {
+                @include flex(wrap, center, center);
+                gap: 0px;
+                padding: 0;
+                    .navbar__logochico{
+                        transition-duration: 2s;
+                        width: 210px;
+                            &:hover{
+                                width: 240px;
+                                transition-duration: 2s;
+                            }    
+                    }
+                    nav {
+                        .menu {
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            align-items: baseline;
+                            flex-wrap: wrap;
+                            list-style: none;
+                            font: bolder;
+                            font-size: larger;
+                                .menu__link {
+                                    margin: 0px 10px;
+                                    background-color: white;
+                                    text-decoration: none;
+                                    transition-duration: 2.5s;
+                                    font-size: 20px;
+                                        &:hover{
+                                            font-size: 20px;
+                                            background-color: $background-color;
+                                            text-decoration: underline;
+                                            transition-duration: 2s;
+                                        }
+                                }
+                                .menu__link--active{
+                                    color: $secondary;
+                                }
+                                .menu__item--active {
+                                    list-style-image: none;    
+                                }
+                                .menu__link__ultimo{
+                                    text-align: center;
+                                    margin: 0 10px;
+                                    text-decoration: none;
+                                    transition-duration: 2.5s;
+                                    font-size: 20px;
+                                    &:hover{
+                                        font-size: 20px;
+                                        background-color: $background-color;
+                                        text-decoration: underline;
+                                        transition-duration: 2s;
+                                    }
+                                }  
+                        }
+                    }
+            }
+    }
+    
+    h2{
+        font-size: 14px;
+    }
+    
+
     
     .fotos img{
         width: 270px;

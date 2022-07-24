@@ -1,7 +1,41 @@
 /*INICIO*/
 
+.maintext {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+            .backmorz{
+                position: absolute;
+                z-index: 3;
+                width: 400px;
+                height: 500px;
+                filter: opacity(0%);
+                transition-duration: 1.5s;
+                }
+            .backmorz:hover {
+                transition-duration: 1.5s;
+                filter: opacity(30%);
+                }
+
+
+        .papiro{
+            position: relative;
+            z-index: 1;
+            width: 520px;
+            height: 700px;
+        }
+        p{
+            z-index: 2;
+            position: absolute;
+            font-family: 'MedievalSharp', cursive;
+            font-weight: bold;
+            border: none;
+            width: 400px;
+        }
+}
+
 .maincontent{
-    @include flex(wrap, center, center);
 
 }
 
