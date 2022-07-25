@@ -1,189 +1,16 @@
+// MEDIA QUERIE MOBILE 
+
 @media (min-width: 120px) and (max-width: 380px) {
     body {
-        background-color: white;
+        background-color: $base;
         margin-left: 2px;
         margin-right: 2px;
     }
-
-    .mainimage { width: 300px;
-        height: 320px;
-    }
-        
-    i, .fa-2x{
-        font-size: 1.2em;
+    h2{
+        font-size: 14px;
     }
 
-
-.header{
-    @include flex(wrap, center, center);
-        .navbar {
-            @include flex(wrap, center, center);
-            gap: 0px;
-            padding: 0;
-                .navbar__logochico{
-                    transition-duration: 2s;
-                    width: 175px;
-                        &:hover{
-                            width: 230px;
-                            transition-duration: 2s;
-                        }    
-                }
-                nav {
-                    .menu {
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: center;
-                        align-items: baseline;
-                        flex-wrap: wrap;
-                        list-style: none;
-                        font: bolder;
-                        font-size: larger;
-                            .menu__link {
-                                margin: 0px 10px;
-                                background-color: white;
-                                text-decoration: none;
-                                transition-duration: 2.5s;
-                                font-size: 15px;
-                                    &:hover{
-                                        font-size: 15px;
-                                        background-color: $background-color;
-                                        text-decoration: underline;
-                                        transition-duration: 2s;
-                                    }
-                            }
-                            .menu__link--active{
-                                color: $secondary;
-                            }
-                            .menu__item--active {
-                                list-style-image: none;    
-                            }
-                            .menu__link__ultimo{
-                                text-align: center;
-                                margin: 0 10px;
-                                text-decoration: none;
-                                transition-duration: 2.5s;
-                                font-size: 15px;
-                                &:hover{
-                                    font-size: 15px;
-                                    background-color: $background-color;
-                                    text-decoration: underline;
-                                    transition-duration: 2s;
-                                }
-                            }  
-                    }
-                }
-        }
-}
-
-h2{
-    font-size: 14px;
-}
-
-#morzart{
-    display: grid;
-    grid-template-areas:
-    "img1"
-    "img2"
-    "img3" 
-    "img4"
-    "img5" 
-    "img6"
-    "img7" 
-    "img8";
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
-        
-        }
-
-iframe{
-    width: 270px;
-    height:300px;
-} 
-
-.fotos img{
-    width: 270px;
-    height:250px; 
-}
-#galeria {
-	text-align: center;
-    .fotos  {
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: space-around;
-        align-items: center;
-        border-radius: 1%;
-        
-            img{
-                width: 300px;
-                height: 220px;
-                transition-duration: 2s;
-                &:hover{
-                    width: 300px;
-                    height: 220px;
-                    transition-duration: 2s;
-                }
-            }
-    }
-}
-
-.maintext {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: row;
-        .backmorz{
-            margin-top: 89px;
-            position: absolute;
-            z-index: 3;
-            width: 240px;
-            height: 350px;
-            filter: opacity(0%);
-            transition-duration: 1.5s;
-            }
-        .backmorz:hover {
-            transition-duration: 1.5s;
-            filter: opacity(30%);
-            }
-
-
-    .papiro{
-        position: relative;
-        z-index: 1;
-        width: 320px;
-        height: 715px;
-    }
-    p{
-        margin-top: 50px;
-        font-size: small;
-        z-index: 2;
-        position: absolute;
-        font-family: 'MedievalSharp', cursive;
-        font-weight: bold;
-        border: none;
-        width: 240px;
-        height: 400px ;
-    }
-}
-
-
-
-}
-
-@media (min-width: 381px) and (max-width: 500px){
-    body {
-        background-color: white;
-        margin-left: 2px;
-        margin-right: 2px;
-    }
-
-    .mainimage { width: 325px;
-        height: 380px;
-    }
-        
-    i, .fa-2x{
-        font-size: 1.4em;
-    }
-
+// MEDIA QUERIE MOBILE header  
     .header{
         @include flex(wrap, center, center);
             .navbar {
@@ -193,6 +20,185 @@ iframe{
                     .navbar__logochico{
                         transition-duration: 2s;
                         width: 175px;
+                            &:hover{
+                                width: 230px;
+                                transition-duration: 2s;
+                            }    
+                    }
+                    nav {
+                        .menu {
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            align-items: baseline;
+                            flex-wrap: wrap;
+                            list-style: none;
+                            font: bolder;
+                            font-size: large;
+                                .menu__link {
+                                    margin: 0px 6px;
+                                    background-color:$base;
+                                    text-decoration: none;
+                                    transition-duration: 2.5s;
+                                    font-size: 15px;
+                                        &:hover{
+                                            font-size: 15px;
+                                            background-color: $background-color;
+                                            text-decoration: underline;
+                                            transition-duration: 2s;
+                                        }
+                                }
+                                .menu__link--active{
+                                    color: $secondary;
+                                }
+                                .menu__item--active {
+                                    list-style-image: none;    
+                                }
+                                .menu__link__ultimo{
+                                    text-align: center;
+                                    margin: 0 10px;
+                                    text-decoration: none;
+                                    transition-duration: 2.5s;
+                                    font-size: 15px;
+                                    &:hover{
+                                        font-size: 15px;
+                                        background-color: $background-color;
+                                        text-decoration: underline;
+                                        transition-duration: 2s;
+                                    }
+                                }  
+                        }
+                    }
+            }
+    }
+
+
+// MEDIA QUERIE MOBILE footer  
+    i, .fa-2x{
+        font-size: 1.2em;
+    }
+    .textofooter{
+        h3{
+            font-size:9px;
+        }
+    }
+
+// MEDIA QUERIE MOBILE - morzart
+    #morzart{
+        display: grid;
+        gap: 5px;
+        grid-template-areas:
+        ". img1 ."
+        ". img2 ."
+        ". img3 ." 
+        ". img4 ."
+        ". img5 ." 
+        ". img6 ."
+        ". img7 ." 
+        ". img8 .";
+        grid-template-columns: 0.1fr 1fr 0.1fr;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    }
+
+// MEDIA QUERY MOBILE - heroes    
+    .miembros .card .tarjetita .card-img-top {
+        width: 284px;
+        height: 260px;
+    }
+
+// MEDIA QUERY MOBILE - videos
+    iframe{
+        width: 270px;
+        height:240px;
+    } 
+
+// MEDIA QUERY MOBILE - fotos
+    #galeria {
+        text-align: center;
+        .fotos  {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            border-radius: 1%;
+            
+                img{
+                    width: 300px;
+                    height: 220px;
+                    transition-duration: 2s;
+                    &:hover{
+                        width: 320px;
+                        height: 250px;
+                        transition-duration: 2s;
+                    }
+                }
+        }
+    }
+
+// MEDIA QUERY MOBILE - main    
+    .maintext {   
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: row;
+            .backmorz{
+                margin-top: 89px;
+                position: absolute;
+                z-index: 3;
+                width: 240px;
+                height: 350px;
+                filter: opacity(0%);
+                transition-duration: 1.5s;
+            }
+            .backmorz:hover {
+                transition-duration: 1.5s;
+                filter: opacity(30%);
+            }
+            .papiro{
+                position: relative;
+                z-index: 1;
+                width: 310px;
+                height: 715px;
+            }
+            p{
+                margin-top: 50px;
+                font-size: small;
+                z-index: 2;
+                position: absolute;
+                font-family:$font-intro;
+                font-weight: bold;
+                border: none;
+                width: 240px;
+                height: 400px ;
+            }
+        }
+}
+
+
+
+// MOBILE L MEDIA QUERY
+
+@media (min-width: 381px) and (max-width: 500px){
+    body {
+        background-color: white;
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+
+    i, .fa-2x{
+        font-size: 1.4em;
+    }
+
+// MEDIA QUERY MOBILE L -- header  
+    .header{
+        @include flex(wrap, center, center);
+            .navbar {
+                @include flex(wrap, center, center);
+                gap: 0px;
+                padding: 0;
+                    .navbar__logochico{
+                        transition-duration: 2s;
+                        width: 230px;
                             &:hover{
                                 width: 250px;
                                 transition-duration: 2s;
@@ -209,11 +215,11 @@ iframe{
                             font: bolder;
                             font-size: larger;
                                 .menu__link {
-                                    margin: 0px 10px;
-                                    background-color: white;
+                                    margin: 0px 8px;
+                                    background-color: $base;
                                     text-decoration: none;
                                     transition-duration: 2.5s;
-                                    font-size: 15px;
+                                    font-size: 19px;
                                         &:hover{
                                             font-size: 15px;
                                             background-color: $background-color;
@@ -248,38 +254,36 @@ iframe{
     h2{
         font-size: 14px;
     }
-    
+
+// MEDIA QUERY MOBILE L - morzart    
     #morzart{
         display: grid;
+        gap: 8px;
         grid-template-areas:
-        "img1"
-        "img2"
-        "img3" 
-        "img4"
-        "img5" 
-        "img6"
-        "img7" 
-        "img8";
-        grid-template-columns: 1fr;
+        ". img1 ."
+        ". img2 ."
+        ". img3 ." 
+        ". img4 ."
+        ". img5 ." 
+        ". img6 ."
+        ". img7 ." 
+        ". img8 .";
+        grid-template-columns: 0.1fr 1fr 0.1fr;
         grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
-            
-            }
-    
-    iframe{
-        width: 270px;
-        height:300px;
-    } 
-    
-    .fotos img{
-        width: 270px;
-        height:250px; 
     }
 
+// MEDIA QUERY MOBILE L - videos
+    iframe {
+        width: 350px;
+        height: 340px;
+    }
+
+// MEDIA QUERY MOBILE L - fotos
     #galeria {
         text-align: center;
         .fotos  {
             display: flex;
-            flex-direction: column-reverse;
+            flex-direction: column;
             justify-content: space-around;
             align-items: center;
             border-radius: 1%;
@@ -289,15 +293,15 @@ iframe{
                     height: 260px;
                     transition-duration: 2s;
                     &:hover{
-                        width: 350px;
-                        height: 260px;
+                        width: 370px;
+                        height: 290px;
                         transition-duration: 2s;
                     }
                 }
         }
     }
     
-    
+// MEDIA QUERY MOBILE L - main   
     .maintext {
         display: flex;
         justify-content: center;
@@ -315,27 +319,22 @@ iframe{
                 transition-duration: 1.5s;
                 filter: opacity(30%);
                 }
-
-
-        .papiro{
-            position: relative;
-            z-index: 1;
-            width: 400px;
-            height: 550px;
-        }
-        p{
-            font-size: small;
-            z-index: 2;
-            position: absolute;
-            font-family: 'MedievalSharp', cursive;
-            font-weight: bold;
-            border: none;
-            width: 310px;
-        }
-}
-
-
-
+            .papiro{
+                position: relative;
+                z-index: 1;
+                width: 400px;
+                height: 550px;
+            }
+            p{
+                font-size: small;
+                z-index: 2;
+                position: absolute;
+                font-family: $font-intro;
+                font-weight: bold;
+                border: none;
+                width: 310px;
+            }
+    }
 }
 
 
@@ -353,35 +352,21 @@ iframe{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+// TABLET MEDIA QUERY
 
 
 @media (min-width: 501px) and (max-width: 768px){
     body {
-        background-color: white;
+        background-color:$base;
         margin-left: 2px;
         margin-right: 2px;
     }
-
-    .mainimage { width: 450px;
-        height: 620px;
-    }
-        
+// MEDIA QUERIE TABLET --  footer      
     i, .fa-2x{
         font-size: 1.7em;
     }
 
+// MEDIA QUERY TABLET -- header  
     .header{
         @include flex(wrap, center, center);
             .navbar {
@@ -390,9 +375,9 @@ iframe{
                 padding: 0;
                     .navbar__logochico{
                         transition-duration: 2s;
-                        width: 210px;
+                        width: 220px;
                             &:hover{
-                                width: 310px;
+                                width: 230px;
                                 transition-duration: 2s;
                             }    
                     }
@@ -408,12 +393,12 @@ iframe{
                             font-size: larger;
                                 .menu__link {
                                     margin: 0px 10px;
-                                    background-color: white;
+                                    background-color: $base;
                                     text-decoration: none;
                                     transition-duration: 2.5s;
-                                    font-size: 18px;
+                                    font-size: 15px;
                                         &:hover{
-                                            font-size: 18px;
+                                            font-size: 16px;
                                             background-color: $background-color;
                                             text-decoration: underline;
                                             transition-duration: 2s;
@@ -446,12 +431,14 @@ iframe{
     h2{
         font-size: 14px;
     }
-    
+
+// MEDIA QUERY TABLET -- morzart
     #morzart{
         display: grid;
+        gap: 10px;
         grid-template-areas:
         ". img1 ."
-        ". img2 ." 
+        ". img2 ."
         ". img3 ." 
         ". img4 ."
         ". img5 ." 
@@ -460,24 +447,20 @@ iframe{
         ". img8 .";
         grid-template-columns: 0.2fr 1fr 0.2fr;
         grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
-            
-            }
+    }
     
-    iframe{
-        width: 270px;
-        height:300px;
-    } 
-    
-    .fotos img{
-        width: 270px;
-        height:250px; 
+// MEDIA QUERY TABLET -- videos
+    iframe {
+        width: 480px;
+        height: 400px;
     }
 
+// MEDIA QUERY TABLET -- fotos
     #galeria {
         text-align: center;
         .fotos  {
             display: flex;
-            flex-direction: column-reverse;
+            flex-direction: column;
             justify-content: space-around;
             align-items: center;
             border-radius: 1%;
@@ -487,39 +470,35 @@ iframe{
                     height: 380px;
                     transition-duration: 2s;
                     &:hover{
-                        width: 500px;
-                        height: 380px;
+                        width: 570px;
+                        height: 450px;
                         transition-duration: 2s;
                     }
                 }
         }
     }
-    
-    
-
-
-
 }
 
 
 
-
+// MEDIA QUERY LAPTOP 
 
 @media (min-width: 769px) and (max-width: 1024px){
     body {
-        background-color: white;
+        background-color:$base;
         margin-left: 2px;
         margin-right: 2px;
     }
-
-    .mainimage { width: 550px;
-        height: 780px;
+    h2{
+        font-size: 14px;
     }
-        
+
+// MEDIA QUERY LAPTOP -- footer        
     i, .fa-2x{
         font-size: 2em;
     }
 
+// MEDIA QUERY LAPTOP -- header      
     .header{
         @include flex(wrap, center, center);
             .navbar {
@@ -528,9 +507,9 @@ iframe{
                 padding: 0;
                     .navbar__logochico{
                         transition-duration: 2s;
-                        width: 210px;
+                        width: 240px;
                             &:hover{
-                                width: 225px;
+                                width: 250px;
                                 transition-duration: 2s;
                             }    
                     }
@@ -545,11 +524,11 @@ iframe{
                             font: bolder;
                             font-size: larger;
                                 .menu__link {
-                                    margin: 0px 10px;
-                                    background-color: white;
+                                    margin: 0px 15px;
+                                    background-color:$base;
                                     text-decoration: none;
                                     transition-duration: 2.5s;
-                                    font-size: 20px;
+                                    font-size: 19px;
                                         &:hover{
                                             font-size: 20px;
                                             background-color: $background-color;
@@ -580,24 +559,19 @@ iframe{
                     }
             }
     }
-    
-    h2{
-        font-size: 14px;
+
+// MEDIA QUERY LAPTOP -- videos
+    iframe {
+        width: 700px;
+        height: 550px;
     }
     
-
-    
-    .fotos img{
-        width: 270px;
-        height:250px; 
-    }
-
-
+// MEDIA QUERY LAPTOP -- fotos    
     #galeria {
         text-align: center;
         .fotos  {
             display: flex;
-            flex-direction: column-reverse;
+            flex-direction: column;
             justify-content: space-around;
             align-items: center;
             border-radius: 1%;
@@ -607,32 +581,34 @@ iframe{
                     height: 450px;
                     transition-duration: 2s;
                     &:hover{
-                        width: 600px;
-                        height: 450px;
+                        width: 700px;
+                        height: 550px;
                         transition-duration: 2s;
                     }
                 }
         }
     }
-    
-    
 }
+
+
+// LAPTOP L MEDIA QUERY
 
 @media (min-width: 1025px) and (max-width: 1440px){
     body {
-        background-color: white;
+        background-color: $base;
         margin-left: 2px;
         margin-right: 2px;
     }
+    h2{
+        font-size: 14px;
+    }    
 
-    .mainimage { width: 550px;
-        height: 780px;
-    }
-        
+// MEDIA QUERY LAPTOP L -- footer    
     i, .fa-2x{
         font-size: 2em;
     }
 
+// MEDIA QUERY LAPTOP L -- header      
     .header{
         @include flex(wrap, center, center);
             .navbar {
@@ -641,9 +617,9 @@ iframe{
                 padding: 0;
                     .navbar__logochico{
                         transition-duration: 2s;
-                        width: 210px;
+                        width: 270px;
                             &:hover{
-                                width: 240px;
+                                width: 280px;
                                 transition-duration: 2s;
                             }    
                     }
@@ -658,13 +634,13 @@ iframe{
                             font: bolder;
                             font-size: larger;
                                 .menu__link {
-                                    margin: 0px 10px;
-                                    background-color: white;
+                                    margin: 0px 18px;
+                                    background-color: $base;
                                     text-decoration: none;
                                     transition-duration: 2.5s;
-                                    font-size: 20px;
+                                    font-size: 21px;
                                         &:hover{
-                                            font-size: 20px;
+                                            font-size: 22px;
                                             background-color: $background-color;
                                             text-decoration: underline;
                                             transition-duration: 2s;
@@ -694,39 +670,26 @@ iframe{
             }
     }
     
-    h2{
-        font-size: 14px;
-    }
-    
-
-    
-    .fotos img{
-        width: 270px;
-        height:250px; 
-    }
-
-
+// MEDIA QUERY LAPTOP L -- fotos
     #galeria {
         text-align: center;
         .fotos  {
             display: flex;
-            flex-direction: column-reverse;
+            flex-direction: column;
             justify-content: space-around;
             align-items: center;
             border-radius: 1%;
             
-                img{
-                    width: 600px;
-                    height: 450px;
+            img{
+                width: 630px;
+                height: 480px;
+                transition-duration: 2s;
+                &:hover{
+                    width: 700px;
+                    height: 550px;
                     transition-duration: 2s;
-                    &:hover{
-                        width: 600px;
-                        height: 450px;
-                        transition-duration: 2s;
-                    }
                 }
+            }
         }
-    }
-    
-    
+    }   
 }

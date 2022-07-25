@@ -1,35 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
 
-
 * {
     margin: 0; 
     padding: 0; 
 }
-
-
-.container{
-    max-width: 1150px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.4fr 2fr 0.1fr;
-    gap: 1rem;
-    grid-template-areas:
-        "header"
-        "maincontent"
-        "footer";
-        .header{
-            grid-area: header;}
-        .maincontent{
-                    grid-area: maincontent;
-                    display: flex;
-                    justify-content: center;
-                }
-        .footer{
-            grid-area: footer;
-        }
-        }
-
 
 ul{
     margin-bottom: 0;
@@ -37,23 +12,21 @@ ul{
 }
 
 li, a {
-    font-family: 'Rajdhani', sans-serif;
+    font-family: $font-main;
     color: black;
     margin: 3px;
     font-weight: bold;
-    font-size: 20px
-    ;
-    
-}
+    font-size: 20px;
+    }
 
 body {
-    background-color: white;
+    background-color:$base;
     margin-left: 150px;
     margin-right: 150px;
 }
 
 h2{
-    font-family: 'Rajdhani', sans-serif;
+    font-family: $font-main;
     border: solid black 2px;
     font-weight: bold;
     margin-top: 0;
@@ -66,7 +39,7 @@ h2{
 }
 
 h3{
-    font-family: 'Rajdhani', sans-serif;
+    font-family: $font-main;
     border: solid black 2px;
     font-weight: bold;
     margin-top: 0;
@@ -77,6 +50,7 @@ h3{
     text-align: center;
     
 }
+
 p{
     border: solid black 2px;
     text-align: center;

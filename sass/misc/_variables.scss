@@ -1,12 +1,11 @@
-
-
 /* SPACINGS*/
 $spacing-large: 6rem;
 $spacing-medium: 2rem;
 $spacing-small: 1rem;
 
-
 /* FONT FAMILY */
+$font-main:'Rajdhani', sans-serif, cursive;
+$font-intro:'MedievalSharp', cursive;
 $font-principal: 'Luxurious Roman', cursive;
 $font-title: 'cormorant garamond';
 
@@ -15,18 +14,7 @@ $text-large: 50px;
 $text-base: 19px;
 $text-small: 10px;
 
-/* FONT SIZES*/
-// $background-color: (
-// primary: black,
-// secondary: red,
-// base: white,);
-// @each $key, $val in $background-color {
-//     .#{$key} {
-//         background-color: #{$val};
-//     }
-// }
-
-// /COLORS/
+///COLORS/
 $primary:rgba(0, 8, 8, 0.992);
 $secondary:red;
 $text-color: black;

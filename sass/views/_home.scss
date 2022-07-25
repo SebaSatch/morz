@@ -1,5 +1,17 @@
 /*INICIO*/
-
+.intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2{
+        font-size: 9px;
+        margin-top: 8px;
+    }
+    audio {
+        width: 260px;
+        height: 20px;
+    }
+}
 .maintext {
         display: flex;
         justify-content: center;
@@ -15,31 +27,20 @@
                 }
             .backmorz:hover {
                 transition-duration: 1.5s;
-                filter: opacity(30%);
+                filter: opacity(40%);
                 }
-
-
-        .papiro{
-            position: relative;
-            z-index: 1;
-            width: 520px;
-            height: 700px;
-        }
-        p{
-            z-index: 2;
-            position: absolute;
-            font-family: 'MedievalSharp', cursive;
-            font-weight: bold;
-            border: none;
-            width: 400px;
-        }
-}
-
-.maincontent{
-
-}
-
-.mainimage { 
-    width: 600px;
-    height: 800px;
+            .papiro{
+                position: relative;
+                z-index: 1;
+                width: 520px;
+                height: 700px;
+            }
+            p{
+                z-index: 2;
+                position: absolute;
+                font-family: $font-intro;
+                font-weight: bold;
+                border: none;
+                width: 400px;
+            }
 }

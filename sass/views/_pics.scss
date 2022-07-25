@@ -4,11 +4,10 @@
 	text-align: center;
     .fotos  {
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
         justify-content: space-around;
         align-items: center;
         border-radius: 1%;
-        
             img{
                 transition-duration: 2s;
                 &:hover{

@@ -2,12 +2,14 @@
 
 #morzart{
     display: grid;
+    gap: 7px;
+    margin-bottom: 13px;
     grid-template-areas:
     ". img1 img2 ."
     ". img3 img4 ."
     ". img5 img6 ."
     ". img7 img8 .";
-    grid-template-columns: 0.2fr 1fr 1fr 0.2fr;
+    grid-template-columns: 0.9fr 1fr 1fr 0.9fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
         
         }
@@ -22,7 +24,8 @@
             width:100%;
             height: 100%;
             object-fit: cover;
-            filter: grayscale(90%);
+            filter: grayscale(95%);
+            transition-duration: 1.5s;
         }       
         .img2{
             grid-area: img2;
@@ -38,77 +41,54 @@
             grid-area: img3;
         }
         .img3__foto:hover {
-            transition-duration: 1.5s;
-            filter: grayscale(0%);
+            @extend .img1__foto:hover
         }
         .img3__foto{
-            width:100%;
-            height: 100%;
-            object-fit: cover;
-            filter: grayscale(90%);
+            @extend .img1__foto
         }
         .img4{
             grid-area: img4;
         }
         .img4__foto:hover {
-            transition-duration: 1.5s;
-            filter: grayscale(0%);
+            @extend .img1__foto:hover
+
         }
         .img4__foto{
-            width:100%;
-            height: 100%;
-            object-fit: cover;
-            filter: grayscale(90%);
+            @extend .img1__foto
         }
         .img5{
             grid-area: img5;
         }
         .img5__foto:hover {
-            transition-duration: 1.5s;
-            filter: grayscale(0%);
+            @extend .img1__foto:hover
         }
         .img5__foto{
-            width:100%;
-            height: 100%;
-            object-fit: cover;
-            filter: grayscale(90%);
+            @extend .img1__foto
         }
         .img6{
             grid-area: img6;
         }
         .img6__foto:hover {
-            transition-duration: 1.5s;
-            filter: grayscale(0%);
+            @extend .img1__foto:hover
         }
         .img6__foto{
-            width:100%;
-            height: 100%;
-            object-fit: cover;
-            filter: grayscale(90%);
+            @extend .img1__foto
         }
         .img7{
             grid-area: img7;
         }
         .img7__foto:hover {
-            transition-duration: 1.5s;
-            filter: grayscale(0%);
+            @extend .img1__foto:hover
         }
         .img7__foto{
-            width:100%;
-            height: 100%;
-            object-fit: cover;
-            filter: grayscale(90%);
+            @extend .img1__foto
         }
         .img8{
             grid-area: img8;
         }
         .img8__foto:hover {
-            transition-duration: 1.5s;
-            filter: grayscale(0%);
+            @extend .img1__foto:hover
         }
         .img8__foto{
-            width:100%;
-            height: 100%;
-            object-fit: cover;
-            filter:grayscale(90%);
+            @extend .img1__foto
         }

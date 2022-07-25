@@ -1,0 +1,27 @@
+/*HEROES*/
+
+.miembros {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: initial;
+        margin-top: 20px;
+        margin-left: 150px;
+        margin-right: 150px;
+        .card{
+                font-family: $font-main;
+                .tarjetita{
+                        .card-img-top{
+                                width: 367px;
+                                height: 356px;
+                        }
+                }
+                .card-body{
+                        align-items: initial;
+                }
+        }
+}
+
+
+

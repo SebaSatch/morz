@@ -2,7 +2,6 @@
 /* SPACINGS*/
 /* FONT FAMILY */
 /* FONT SIZES*/
-/* FONT SIZES*/
 @import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400");
@@ -10,28 +9,12 @@
   margin: 0;
   padding: 0; }
 
-.container {
-  max-width: 1150px;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 0.4fr 2fr 0.1fr;
-  gap: 1rem;
-  grid-template-areas: "header" "maincontent" "footer"; }
-  .container .header {
-    grid-area: header; }
-  .container .maincontent {
-    grid-area: maincontent;
-    display: flex;
-    justify-content: center; }
-  .container .footer {
-    grid-area: footer; }
-
 ul {
   margin-bottom: 0;
   padding-left: 0; }
 
 li, a {
-  font-family: 'Rajdhani', sans-serif;
+  font-family: "Rajdhani", sans-serif, cursive;
   color: black;
   margin: 3px;
   font-weight: bold;
@@ -43,7 +26,7 @@ body {
   margin-right: 150px; }
 
 h2 {
-  font-family: 'Rajdhani', sans-serif;
+  font-family: "Rajdhani", sans-serif, cursive;
   border: solid black 2px;
   font-weight: bold;
   margin-top: 0;
@@ -54,7 +37,7 @@ h2 {
   text-align: center; }
 
 h3 {
-  font-family: 'Rajdhani', sans-serif;
+  font-family: "Rajdhani", sans-serif, cursive;
   border: solid black 2px;
   font-weight: bold;
   margin-top: 0;
@@ -94,7 +77,7 @@ p {
         width: 240px;
         transition-duration: 2s; }
     .header .navbar nav .menu {
-      font-family: 'Rajdhani', sans-serif;
+      font-family: "Rajdhani", sans-serif, cursive;
       display: flex;
       flex-direction: row;
       justify-content: center;
@@ -132,8 +115,7 @@ p {
 .social-wrapper {
   display: flex;
   align-items: center;
-  justify-content: center;
-  height: 10vh; }
+  justify-content: center; }
 
 .social-wrapper i {
   padding: 0px 10px;
@@ -162,8 +144,26 @@ p {
   color: #c9510c;
   text-shadow: 0px 16px 10px rgba(189, 44, 0, 0.3); }
 
+.textofooter {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .textofooter h3 {
+    font-size: 9px; }
+
 /* VIEWS */
 /*INICIO*/
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .intro h2 {
+    font-size: 9px;
+    margin-top: 8px; }
+  .intro audio {
+    width: 260px;
+    height: 20px; }
+
 .maintext {
   display: flex;
   justify-content: center;
@@ -178,7 +178,7 @@ p {
     transition-duration: 1.5s; }
   .maintext .backmorz:hover {
     transition-duration: 1.5s;
-    filter: opacity(30%); }
+    filter: opacity(40%); }
   .maintext .papiro {
     position: relative;
     z-index: 1;
@@ -187,34 +187,33 @@ p {
   .maintext p {
     z-index: 2;
     position: absolute;
-    font-family: 'MedievalSharp', cursive;
+    font-family: "MedievalSharp", cursive;
     font-weight: bold;
     border: none;
     width: 400px; }
 
-.mainimage {
-  width: 600px;
-  height: 800px; }
-
 /*MORZART*/
 #morzart {
   display: grid;
+  gap: 7px;
+  margin-bottom: 13px;
   grid-template-areas: ". img1 img2 ." ". img3 img4 ." ". img5 img6 ." ". img7 img8 .";
-  grid-template-columns: 0.2fr 1fr 1fr 0.2fr;
+  grid-template-columns: 0.9fr 1fr 1fr 0.9fr;
   grid-template-rows: 1fr 1fr 1fr 1fr; }
 
 .img1 {
   grid-area: img1; }
 
-.img1__foto:hover, .img2__foto:hover {
+.img1__foto:hover, .img2__foto:hover, .img3__foto:hover, .img4__foto:hover, .img5__foto:hover, .img6__foto:hover, .img7__foto:hover, .img8__foto:hover {
   transition-duration: 1.5s;
   filter: grayscale(0%); }
 
-.img1__foto, .img2__foto {
+.img1__foto, .img2__foto, .img3__foto, .img4__foto, .img5__foto, .img6__foto, .img7__foto, .img8__foto {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: grayscale(90%); }
+  filter: grayscale(95%);
+  transition-duration: 1.5s; }
 
 .img2 {
   grid-area: img2; }
@@ -222,91 +221,33 @@ p {
 .img3 {
   grid-area: img3; }
 
-.img3__foto:hover {
-  transition-duration: 1.5s;
-  filter: grayscale(0%); }
-
-.img3__foto {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: grayscale(90%); }
-
 .img4 {
   grid-area: img4; }
-
-.img4__foto:hover {
-  transition-duration: 1.5s;
-  filter: grayscale(0%); }
-
-.img4__foto {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: grayscale(90%); }
 
 .img5 {
   grid-area: img5; }
 
-.img5__foto:hover {
-  transition-duration: 1.5s;
-  filter: grayscale(0%); }
-
-.img5__foto {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: grayscale(90%); }
-
 .img6 {
   grid-area: img6; }
-
-.img6__foto:hover {
-  transition-duration: 1.5s;
-  filter: grayscale(0%); }
-
-.img6__foto {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: grayscale(90%); }
 
 .img7 {
   grid-area: img7; }
 
-.img7__foto:hover {
-  transition-duration: 1.5s;
-  filter: grayscale(0%); }
-
-.img7__foto {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: grayscale(90%); }
-
 .img8 {
   grid-area: img8; }
 
-.img8__foto:hover {
-  transition-duration: 1.5s;
-  filter: grayscale(0%); }
-
-.img8__foto {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: grayscale(90%); }
-
-/*HISTORIA*/
+/*HEROES*/
 .miembros {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: initial;
-  margin-top: 20px; }
+  margin-top: 20px;
+  margin-left: 150px;
+  margin-right: 150px; }
   .miembros .card {
-    font-family: 'Rajdhani', sans-serif; }
+    font-family: "Rajdhani", sans-serif, cursive; }
     .miembros .card .tarjetita .card-img-top {
       width: 367px;
       height: 356px; }
@@ -318,7 +259,7 @@ p {
   text-align: center; }
   #galeria .fotos {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     border-radius: 1%; }
@@ -338,17 +279,13 @@ p {
     border: solid grey 4px;
     margin: 10px; }
 
-/*CONTACTO*/
 @media (min-width: 120px) and (max-width: 380px) {
   body {
     background-color: white;
     margin-left: 2px;
     margin-right: 2px; }
-  .mainimage {
-    width: 300px;
-    height: 320px; }
-  i, .fa-2x {
-    font-size: 1.2em; }
+  h2 {
+    font-size: 14px; }
   .header {
     display: flex;
     flex-wrap: wrap;
@@ -375,9 +312,9 @@ p {
         flex-wrap: wrap;
         list-style: none;
         font: bolder;
-        font-size: larger; }
+        font-size: large; }
         .header .navbar nav .menu .menu__link {
-          margin: 0px 10px;
+          margin: 0px 6px;
           background-color: white;
           text-decoration: none;
           transition-duration: 2.5s;
@@ -402,24 +339,27 @@ p {
             background-color: grey;
             text-decoration: underline;
             transition-duration: 2s; }
-  h2 {
-    font-size: 14px; }
+  i, .fa-2x {
+    font-size: 1.2em; }
+  .textofooter h3 {
+    font-size: 9px; }
   #morzart {
     display: grid;
-    grid-template-areas: "img1" "img2" "img3"  "img4" "img5"  "img6" "img7"  "img8";
-    grid-template-columns: 1fr;
+    gap: 5px;
+    grid-template-areas: ". img1 ." ". img2 ." ". img3 ."  ". img4 ." ". img5 ."  ". img6 ." ". img7 ."  ". img8 .";
+    grid-template-columns: 0.1fr 1fr 0.1fr;
     grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr; }
+  .miembros .card .tarjetita .card-img-top {
+    width: 284px;
+    height: 260px; }
   iframe {
     width: 270px;
-    height: 300px; }
-  .fotos img {
-    width: 270px;
-    height: 250px; }
+    height: 240px; }
   #galeria {
     text-align: center; }
     #galeria .fotos {
       display: flex;
-      flex-direction: column-reverse;
+      flex-direction: column;
       justify-content: space-around;
       align-items: center;
       border-radius: 1%; }
@@ -428,8 +368,8 @@ p {
         height: 220px;
         transition-duration: 2s; }
         #galeria .fotos img:hover {
-          width: 300px;
-          height: 220px;
+          width: 320px;
+          height: 250px;
           transition-duration: 2s; }
   .maintext {
     display: flex;
@@ -450,14 +390,14 @@ p {
     .maintext .papiro {
       position: relative;
       z-index: 1;
-      width: 320px;
+      width: 310px;
       height: 715px; }
     .maintext p {
       margin-top: 50px;
       font-size: small;
       z-index: 2;
       position: absolute;
-      font-family: 'MedievalSharp', cursive;
+      font-family: "MedievalSharp", cursive;
       font-weight: bold;
       border: none;
       width: 240px;
@@ -468,9 +408,6 @@ p {
     background-color: white;
     margin-left: 2px;
     margin-right: 2px; }
-  .mainimage {
-    width: 325px;
-    height: 380px; }
   i, .fa-2x {
     font-size: 1.4em; }
   .header {
@@ -487,7 +424,7 @@ p {
       padding: 0; }
       .header .navbar .navbar__logochico {
         transition-duration: 2s;
-        width: 175px; }
+        width: 230px; }
         .header .navbar .navbar__logochico:hover {
           width: 250px;
           transition-duration: 2s; }
@@ -501,11 +438,11 @@ p {
         font: bolder;
         font-size: larger; }
         .header .navbar nav .menu .menu__link {
-          margin: 0px 10px;
+          margin: 0px 8px;
           background-color: white;
           text-decoration: none;
           transition-duration: 2.5s;
-          font-size: 15px; }
+          font-size: 19px; }
           .header .navbar nav .menu .menu__link:hover {
             font-size: 15px;
             background-color: grey;
@@ -530,20 +467,18 @@ p {
     font-size: 14px; }
   #morzart {
     display: grid;
-    grid-template-areas: "img1" "img2" "img3"  "img4" "img5"  "img6" "img7"  "img8";
-    grid-template-columns: 1fr;
+    gap: 8px;
+    grid-template-areas: ". img1 ." ". img2 ." ". img3 ."  ". img4 ." ". img5 ."  ". img6 ." ". img7 ."  ". img8 .";
+    grid-template-columns: 0.1fr 1fr 0.1fr;
     grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr; }
   iframe {
-    width: 270px;
-    height: 300px; }
-  .fotos img {
-    width: 270px;
-    height: 250px; }
+    width: 350px;
+    height: 340px; }
   #galeria {
     text-align: center; }
     #galeria .fotos {
       display: flex;
-      flex-direction: column-reverse;
+      flex-direction: column;
       justify-content: space-around;
       align-items: center;
       border-radius: 1%; }
@@ -552,8 +487,8 @@ p {
         height: 260px;
         transition-duration: 2s; }
         #galeria .fotos img:hover {
-          width: 350px;
-          height: 260px;
+          width: 370px;
+          height: 290px;
           transition-duration: 2s; }
   .maintext {
     display: flex;
@@ -579,7 +514,7 @@ p {
       font-size: small;
       z-index: 2;
       position: absolute;
-      font-family: 'MedievalSharp', cursive;
+      font-family: "MedievalSharp", cursive;
       font-weight: bold;
       border: none;
       width: 310px; } }
@@ -589,9 +524,6 @@ p {
     background-color: white;
     margin-left: 2px;
     margin-right: 2px; }
-  .mainimage {
-    width: 450px;
-    height: 620px; }
   i, .fa-2x {
     font-size: 1.7em; }
   .header {
@@ -608,9 +540,9 @@ p {
       padding: 0; }
       .header .navbar .navbar__logochico {
         transition-duration: 2s;
-        width: 210px; }
+        width: 220px; }
         .header .navbar .navbar__logochico:hover {
-          width: 310px;
+          width: 230px;
           transition-duration: 2s; }
       .header .navbar nav .menu {
         display: flex;
@@ -626,9 +558,9 @@ p {
           background-color: white;
           text-decoration: none;
           transition-duration: 2.5s;
-          font-size: 18px; }
+          font-size: 15px; }
           .header .navbar nav .menu .menu__link:hover {
-            font-size: 18px;
+            font-size: 16px;
             background-color: grey;
             text-decoration: underline;
             transition-duration: 2s; }
@@ -651,20 +583,18 @@ p {
     font-size: 14px; }
   #morzart {
     display: grid;
-    grid-template-areas: ". img1 ." ". img2 ."  ". img3 ."  ". img4 ." ". img5 ."  ". img6 ." ". img7 ."  ". img8 .";
+    gap: 10px;
+    grid-template-areas: ". img1 ." ". img2 ." ". img3 ."  ". img4 ." ". img5 ."  ". img6 ." ". img7 ."  ". img8 .";
     grid-template-columns: 0.2fr 1fr 0.2fr;
     grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr; }
   iframe {
-    width: 270px;
-    height: 300px; }
-  .fotos img {
-    width: 270px;
-    height: 250px; }
+    width: 480px;
+    height: 400px; }
   #galeria {
     text-align: center; }
     #galeria .fotos {
       display: flex;
-      flex-direction: column-reverse;
+      flex-direction: column;
       justify-content: space-around;
       align-items: center;
       border-radius: 1%; }
@@ -673,8 +603,8 @@ p {
         height: 380px;
         transition-duration: 2s; }
         #galeria .fotos img:hover {
-          width: 500px;
-          height: 380px;
+          width: 570px;
+          height: 450px;
           transition-duration: 2s; } }
 
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -682,9 +612,8 @@ p {
     background-color: white;
     margin-left: 2px;
     margin-right: 2px; }
-  .mainimage {
-    width: 550px;
-    height: 780px; }
+  h2 {
+    font-size: 14px; }
   i, .fa-2x {
     font-size: 2em; }
   .header {
@@ -701,9 +630,9 @@ p {
       padding: 0; }
       .header .navbar .navbar__logochico {
         transition-duration: 2s;
-        width: 210px; }
+        width: 240px; }
         .header .navbar .navbar__logochico:hover {
-          width: 225px;
+          width: 250px;
           transition-duration: 2s; }
       .header .navbar nav .menu {
         display: flex;
@@ -715,11 +644,11 @@ p {
         font: bolder;
         font-size: larger; }
         .header .navbar nav .menu .menu__link {
-          margin: 0px 10px;
+          margin: 0px 15px;
           background-color: white;
           text-decoration: none;
           transition-duration: 2.5s;
-          font-size: 20px; }
+          font-size: 19px; }
           .header .navbar nav .menu .menu__link:hover {
             font-size: 20px;
             background-color: grey;
@@ -740,16 +669,14 @@ p {
             background-color: grey;
             text-decoration: underline;
             transition-duration: 2s; }
-  h2 {
-    font-size: 14px; }
-  .fotos img {
-    width: 270px;
-    height: 250px; }
+  iframe {
+    width: 700px;
+    height: 550px; }
   #galeria {
     text-align: center; }
     #galeria .fotos {
       display: flex;
-      flex-direction: column-reverse;
+      flex-direction: column;
       justify-content: space-around;
       align-items: center;
       border-radius: 1%; }
@@ -758,8 +685,8 @@ p {
         height: 450px;
         transition-duration: 2s; }
         #galeria .fotos img:hover {
-          width: 600px;
-          height: 450px;
+          width: 700px;
+          height: 550px;
           transition-duration: 2s; } }
 
 @media (min-width: 1025px) and (max-width: 1440px) {
@@ -767,9 +694,8 @@ p {
     background-color: white;
     margin-left: 2px;
     margin-right: 2px; }
-  .mainimage {
-    width: 550px;
-    height: 780px; }
+  h2 {
+    font-size: 14px; }
   i, .fa-2x {
     font-size: 2em; }
   .header {
@@ -786,9 +712,9 @@ p {
       padding: 0; }
       .header .navbar .navbar__logochico {
         transition-duration: 2s;
-        width: 210px; }
+        width: 270px; }
         .header .navbar .navbar__logochico:hover {
-          width: 240px;
+          width: 280px;
           transition-duration: 2s; }
       .header .navbar nav .menu {
         display: flex;
@@ -800,13 +726,13 @@ p {
         font: bolder;
         font-size: larger; }
         .header .navbar nav .menu .menu__link {
-          margin: 0px 10px;
+          margin: 0px 18px;
           background-color: white;
           text-decoration: none;
           transition-duration: 2.5s;
-          font-size: 20px; }
+          font-size: 21px; }
           .header .navbar nav .menu .menu__link:hover {
-            font-size: 20px;
+            font-size: 22px;
             background-color: grey;
             text-decoration: underline;
             transition-duration: 2s; }
@@ -825,24 +751,19 @@ p {
             background-color: grey;
             text-decoration: underline;
             transition-duration: 2s; }
-  h2 {
-    font-size: 14px; }
-  .fotos img {
-    width: 270px;
-    height: 250px; }
   #galeria {
     text-align: center; }
     #galeria .fotos {
       display: flex;
-      flex-direction: column-reverse;
+      flex-direction: column;
       justify-content: space-around;
       align-items: center;
       border-radius: 1%; }
       #galeria .fotos img {
-        width: 600px;
-        height: 450px;
+        width: 630px;
+        height: 480px;
         transition-duration: 2s; }
         #galeria .fotos img:hover {
-          width: 600px;
-          height: 450px;
+          width: 700px;
+          height: 550px;
           transition-duration: 2s; } }
