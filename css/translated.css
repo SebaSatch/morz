@@ -689,7 +689,7 @@ p {
           height: 550px;
           transition-duration: 2s; } }
 
-@media (min-width: 1025px) and (max-width: 1440px) {
+@media screen and (min-width: 1025px) {
   body {
     background-color: white;
     margin-left: 2px;
